@@ -19,7 +19,7 @@ message(STATUS "OpenCV_DIR = $(OpenCV_DIR)")
 
 if (COVERAGE)
     include(CodeCoverage)
-    set(LCOV_REMOVE_EXTRA "'vendor/*' ")
+    set(LCOV_REMOVE_EXTRA "'*vendor/*' ")
     setup_target_for_coverage(code_coverage cpp-test coverage)
     # set(COVERAGE_SRCS app/main.cpp)
 
